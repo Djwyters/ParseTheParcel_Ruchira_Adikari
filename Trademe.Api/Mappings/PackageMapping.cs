@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Trademe.Api.Models;
 using Trademe.Core.Entities;
+using Trademe.Services.Models;
 
 namespace Trademe.Api.Mappings
 {
@@ -8,8 +9,8 @@ namespace Trademe.Api.Mappings
     {
         public PackageMapping() 
         {
-            CreateMap<PackageRequest, PackageResponse>();
-            CreateMap<PackageResponse, PackageRequest>();
+            CreateMap<PackageRequest, Package>();
+            CreateMap<PackageResult, PackageResponse>(); ;
         }
     }
 }
