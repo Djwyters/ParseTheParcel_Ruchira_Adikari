@@ -10,7 +10,7 @@ namespace Trademe.Api.Mappings
         public PackageMapping() 
         {
             CreateMap<PackageRequest, Package>();
-            CreateMap<PackageResult, PackageResponse>(); ;
+            CreateMap<PackageResult, PackageResponse>();
         }
     }
 }
